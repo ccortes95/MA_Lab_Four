@@ -1,0 +1,15 @@
+<ul>
+    <!--let x means the variable "presidents" is replaced by the variable x, and variable works-->
+    <li *ngFor="let x of presidents">{{x}} </li>
+    <!-- add a new item-->
+    <li>Dalaigh</li>
+</ul>
+
+<ul>
+    <!--use the property binding call x.name and x.term to show the values-->
+    <!--Name: x.name ,  Term: x.term -->
+    <li *ngFor = "let x of myPres">Name: {{x.name}}, Term: {{x.term}}</li>
+</ul>
+
+
+

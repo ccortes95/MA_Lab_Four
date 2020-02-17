@@ -7,4 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-second-project';
-}
+
+  imageHide: boolean = true;
+
+  count: number = 0;
+
+  btnClick(){
+    console.log("Button clicked!");
+    this.count++;
+  }
+
+  btnImage(){
+    if(this.imageHide == true){
+      this.imageHide = false;
+    }
+
+    else{
+      this.imageHide = true;
+    }
+  }
+
+
+
+} // App component
+
+
